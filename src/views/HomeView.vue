@@ -59,21 +59,16 @@
                 vibrant city of Prague, Czech Republic. At present, I am pursuing my studies in the Netherlands. With a
                 steadfast dedication to my craft, I'm fueled by an insatiable thirst for acquiring fresh skills and
                 engaging in meaningful collaborations.
-              </p>
-              <br />
-              <p class="text-grey">
-                My passions encompass the dynamic worlds of business and mountaineering. Just as I conquer challenging
-                peaks with tenacity and strategy, I approach the intricate landscapes of business with a similar vigor. I
-                believe in the power of pushing boundaries, whether it's ascending a mountain or delving into the latest
-                technological advancements.
-              </p>
-              <br />
+              </p> <br />
               <p class="text-grey">
                 Having matured within a multicultural environment, I've naturally cultivated traits of openness,
                 approachability, and resilience in the face of challenges. This unique upbringing has equipped me with the
                 ability to thrive in diverse environments and find innovative solutions to complex problems. I am excited
                 to continue this journey of growth, eagerly embracing new opportunities to expand my horizons and
                 contribute to the ever-evolving landscape of business and technology.
+              </p> <br />
+              <p class="text-grey">I strongly believe in the power of pushing
+                limits, whether by conquering physical heights or exploring the forefront of technological progress.
               </p> <br />
               <v-btn tile dark color="yellow" class="mt-4" href="/files/cv_mh.pdf" download="Mikolaj Hilgert CV">
                 Download Resume
@@ -137,6 +132,7 @@ export default defineComponent({
   background: black;
   transform: skew(0deg, -6deg);
 }
+
 .egg {
   display: block;
   margin-left: 100px;
