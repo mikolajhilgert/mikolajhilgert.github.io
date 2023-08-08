@@ -7,9 +7,10 @@
           <v-col cols="5">
             <div style="position: relative" class="mt-16">
               <h1 class="text-grey">Hello,</h1>
-              <h1 class="text-white">I'm Mikolaj</h1>
+              <h1 class="text-white">My name is Mikolaj</h1>
               <span class="text-grey">Welcome to my site!</span><br />
-              <v-btn tile dark class="text-light-blue mt-8" variant="outlined" href="https://www.linkedin.com/in/mikolaj-hilgert/">
+              <v-btn tile dark class="text-light-blue mt-8" variant="outlined"
+                href="https://www.linkedin.com/in/mikolaj-hilgert/">
                 LinkedIn
               </v-btn>
               <a>&nbsp;</a>
@@ -19,8 +20,7 @@
             </div>
           </v-col>
           <v-col cols="2">
-            <div
-              style="
+            <div style="
                 position: absolute;
                 z-index: 9999;
                 bottom: 0;
@@ -29,9 +29,7 @@
                 left: 0;
                 right: 0;
                 text-align: center;
-              "
-              class="mt-16"
-            >
+              " class="mt-16">
               <v-icon>fas fa-angle-double-down</v-icon>
             </div>
           </v-col>
@@ -54,20 +52,29 @@
             <v-col cols="12" sm="6">
               <h5 class="mt-16">About Me</h5>
               <div style="width: 120px">
-                <v-slider
-                  v-model="slider2"
-                  color="yellow"
-                  label="track-color"
-                  disabled
-                ></v-slider>
+                <br />
               </div>
               <h4 class="mt-n4">Student & Software Engineer at BuildingBlocks (Part of CM.com)</h4>
               <p class="text-grey">
-                Hi, My name is Mikolaj. I am a 21-year-old student from Krakow, Poland, who has spent the majority of his life in Prague, Czech Republic. I am currently studying in the Netherlands. I am committed to my work and have a strong desire to learn new skills and collaborate with others. Furthermore, growing up in a multicultural environment has made me more open, approachable, and adaptable to difficult situations.
+                I'm Mikolaj, a 21-year-old student hailing from Krakow, Poland, but with most of my life enriched by the
+                vibrant city of Prague, Czech Republic. At present, I am pursuing my studies in the Netherlands. With a
+                steadfast dedication to my craft, I'm fueled by an insatiable thirst for acquiring fresh skills and
+                engaging in meaningful collaborations.
               </p>
               <br />
               <p class="text-grey">
-                My current decision to pursue a Bachelor of Science in Software Engineering stems from my passion for programming and problem solving. I'm also interested in business and hope to incorporate it into my future studies.
+                My passions encompass the dynamic worlds of business and mountaineering. Just as I conquer challenging
+                peaks with tenacity and strategy, I approach the intricate landscapes of business with a similar vigor. I
+                believe in the power of pushing boundaries, whether it's ascending a mountain or delving into the latest
+                technological advancements.
+              </p>
+              <br />
+              <p class="text-grey">
+                Having matured within a multicultural environment, I've naturally cultivated traits of openness,
+                approachability, and resilience in the face of challenges. This unique upbringing has equipped me with the
+                ability to thrive in diverse environments and find innovative solutions to complex problems. I am excited
+                to continue this journey of growth, eagerly embracing new opportunities to expand my horizons and
+                contribute to the ever-evolving landscape of business and technology.
               </p> <br />
               <v-btn tile dark color="yellow" class="mt-4" href="/files/cv_mh.pdf" download="Mikolaj Hilgert CV">
                 Download Resume
@@ -92,7 +99,7 @@ export default defineComponent({
   name: "HomeView",
   components: {
     NavBar
-},
+  },
 });
 </script>
 <style scoped>
@@ -109,6 +116,7 @@ export default defineComponent({
   width: 100%;
   color: white;
 }
+
 .head:before {
   content: "";
   position: absolute;
@@ -119,6 +127,7 @@ export default defineComponent({
   background: black;
   transform: skew(0deg, 6deg);
 }
+
 .head:after {
   content: "";
   position: absolute;
@@ -129,6 +138,7 @@ export default defineComponent({
   background: black;
   transform: skew(0deg, -6deg);
 }
+
 .egg {
   display: block;
   margin-left: 100px;
@@ -138,9 +148,11 @@ export default defineComponent({
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
-@media (max-width: 768px) { /* Adjust the max-width as needed for your design */
+@media (max-width: 880px) {
+
+  /* Adjust the max-width as needed for your design */
   .egg {
-    display: none; /* Hide the image on mobile */
+    display: none;
+    /* Hide the image on mobile */
   }
-}
-</style>
+}</style>

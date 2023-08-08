@@ -13,13 +13,7 @@ cd dist
 echo 'www.mikolajhilgert.pl' > CNAME
 
 git init
-git add -A
+git add .
 git commit -m 'deploy'
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:mikolajhilgert/mikolajhilgert.github.io.git main
-
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:mikolajhilgert/mikolajhilgert.github.io.git main:gh-pages
-
-cd -
+git push git@github.com:mikolajhilgert/mikolajhilgert.github.io.git master:gh-pages --force

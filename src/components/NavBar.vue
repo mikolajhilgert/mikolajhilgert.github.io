@@ -1,9 +1,9 @@
 <template>
-    <v-app-bar app color="black" dark flat class="px-12" >
+    <v-app-bar app color="black" dark flat>
       <v-btn >
       mikolajhilgert.pl
       </v-btn>
-      <v-spacer></v-spacer>
+      <v-spacer/>
       <v-btn text @click="scroll('home')" class="text-yellow">Home</v-btn>
       <v-btn text @click="scroll('about')"  >About</v-btn>
     </v-app-bar>
