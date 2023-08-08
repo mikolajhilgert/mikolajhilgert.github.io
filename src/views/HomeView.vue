@@ -1,6 +1,6 @@
 <template>
+  <NavBar />
   <v-app id="home">
-    <NavBar />
     <v-container fluid>
       <div class="head">
         <v-row>
