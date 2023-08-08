@@ -7,7 +7,7 @@
           <v-col cols="5">
             <div style="position: relative" class="mt-16">
               <h1 class="text-grey">Hello,</h1>
-              <h1 class="text-white">My name is Mikolaj</h1>
+              <h1 class="text-white">I'm Mikolaj</h1>
               <span class="text-grey">Welcome to my site!</span><br />
               <v-btn tile dark class="text-light-blue mt-8" variant="outlined"
                 href="https://www.linkedin.com/in/mikolaj-hilgert/">
@@ -46,7 +46,6 @@
             <v-col cols="12" sm="6">
               <div class="egg">
                 <v-img src="i2.png" max-height="500" class=""></v-img>
-
               </div>
             </v-col>
             <v-col cols="12" sm="6">
@@ -120,9 +119,9 @@ export default defineComponent({
 .head:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -65px;
   left: 0;
-  height: 110%;
+  height: 120%;
   width: 50%;
   background: black;
   transform: skew(0deg, 6deg);
@@ -131,14 +130,13 @@ export default defineComponent({
 .head:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -65px;
   right: 0;
-  height: 110%;
+  height: 120%;
   width: 50%;
   background: black;
   transform: skew(0deg, -6deg);
 }
-
 .egg {
   display: block;
   margin-left: 100px;
@@ -147,6 +145,14 @@ export default defineComponent({
   height: 300px;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
+
+/* Apply scaling after a certain point */
+@media (min-width: 1800px) {
+  .egg {
+    transform: scale(1.5) translateX(+50%);
+  }
+}
+
 
 @media (max-width: 880px) {
 
