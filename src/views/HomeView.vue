@@ -44,7 +44,7 @@
         <div>
           <v-row>
             <v-col cols="12" sm="6">
-              <div class="egg">
+              <div class="climb">
                 <v-img src="i2.png" max-height="500" class=""></v-img>
               </div>
             </v-col>
@@ -114,7 +114,7 @@ export default defineComponent({
 .head:before {
   content: "";
   position: absolute;
-  top: -65px;
+  top: -100px;
   left: 0;
   height: 120%;
   width: 50%;
@@ -125,7 +125,7 @@ export default defineComponent({
 .head:after {
   content: "";
   position: absolute;
-  top: -65px;
+  top: -100px;
   right: 0;
   height: 120%;
   width: 50%;
@@ -133,7 +133,7 @@ export default defineComponent({
   transform: skew(0deg, -6deg);
 }
 
-.egg {
+.climb {
   display: block;
   margin-left: 100px;
   margin-top: 50px;
@@ -142,19 +142,13 @@ export default defineComponent({
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
-/* Apply scaling after a certain point */
 @media (min-width: 1800px) {
-  .egg {
+  .climb {
     transform: scale(1.5) translateX(+50%);
   }
 }
-
-
 @media (max-width: 880px) {
-
-  /* Adjust the max-width as needed for your design */
-  .egg {
+  .climb {
     display: none;
-    /* Hide the image on mobile */
   }
 }</style>
