@@ -106,7 +106,7 @@ export default defineComponent({
   text-align: center;
   padding: 12px;
   margin-bottom: 6px;
-  height: 400px;
+  height: 435px;
   width: 100%;
   color: white;
 }
