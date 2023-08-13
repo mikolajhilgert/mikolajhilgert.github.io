@@ -29,6 +29,7 @@
                 left: 0;
                 right: 0;
                 text-align: center;
+                margin-bottom: 10px;
               " class="mt-16">
               <v-icon>fas fa-angle-double-down</v-icon>
             </div>
