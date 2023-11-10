@@ -9,18 +9,30 @@
               <h1 class="text-grey">Hello,</h1>
               <h1 class="text-white">I'm Mikolaj</h1>
               <span class="text-grey">Welcome to my site!</span><br />
-              <v-btn tile dark class="text-light-blue mt-8" variant="outlined"
-                href="https://www.linkedin.com/in/mikolaj-hilgert/">
+              <v-btn
+                tile
+                dark
+                class="text-light-blue mt-8"
+                variant="outlined"
+                href="https://www.linkedin.com/in/mikolaj-hilgert/"
+              >
                 LinkedIn
               </v-btn>
               <a>&nbsp;</a>
-              <v-btn tile dark class="text-gray mt-8" variant="outlined" href="https://github.com/mikolajhilgert">
+              <v-btn
+                tile
+                dark
+                class="text-gray mt-8"
+                variant="outlined"
+                href="https://github.com/mikolajhilgert"
+              >
                 Github
               </v-btn>
             </div>
           </v-col>
           <v-col cols="2">
-            <div style="
+            <div
+              style="
                 position: absolute;
                 z-index: 9999;
                 bottom: 0;
@@ -30,13 +42,16 @@
                 right: 0;
                 text-align: center;
                 margin-bottom: 10px;
-              " class="mt-16">
+              "
+              class="mt-16"
+            >
               <v-icon>fas fa-angle-double-down</v-icon>
             </div>
           </v-col>
           <v-col>
             <div style="position: relative; z-index: 12" class="mt-16">
-              <v-img src="i1.png" contain max-height="460" margin-top="-100"> </v-img>
+              <v-img src="i1.png" contain max-height="460" margin-top="-100">
+              </v-img>
             </div>
           </v-col>
         </v-row>
@@ -54,29 +69,40 @@
               <div style="width: 120px">
                 <br />
               </div>
-              <h4 class="mt-n4">Student & Software Engineer at BuildingBlocks (Part of CM.com)</h4>
+              <h4 class="mt-n4">
+                Student & Software Engineer at BuildingBlocks (Part of CM.com)
+              </h4>
+              <br />
               <p class="text-grey">
-                I'm Mikolaj, a 21-year-old student hailing from Krakow, Poland, but with most of my life enriched by the
-                vibrant city of Prague, Czech Republic. At present, I am pursuing my studies in the Netherlands. With a
-                steadfast dedication to my craft, I'm fueled by an insatiable thirst for acquiring fresh skills and
-                engaging in meaningful collaborations.
-              </p> <br />
+                My name is Mikolaj, and I’m a fourth-year bachelor's student in
+                ICT and Software Engineering.
+              </p>
+              <br />
               <p class="text-grey">
-                Having matured within a multicultural environment, I've naturally cultivated traits of openness,
-                approachability, and resilience in the face of challenges. This unique upbringing has equipped me with the
-                ability to thrive in diverse environments and find innovative solutions to complex problems. I am excited
-                to continue this journey of growth, eagerly embracing new opportunities to expand my horizons and
-                contribute to the ever-evolving landscape of business and technology.
-              </p> <br />
-              <p class="text-grey">I strongly believe in the power of pushing
-                limits, whether by conquering physical heights or exploring the forefront of technological progress.
-              </p> <br />
-              <v-btn tile dark color="yellow" class="mt-4" href="/files/cv_mh.pdf" download="Mikolaj Hilgert CV">
+                Coming from an international environment, I have met and worked
+                with people from many different cultures thanks to the projects
+                I did during my studies. I've learned how to become a good
+                leader and communicator, an active listener, and more
+                importantly how to work both independently and in a team. Other
+                skills I developed are being organised, paying attention to
+                details, and valuing different points of view to reach the best
+                solution. I am ambitious and motivated by the search for
+                creative solutions to difficult problems.
+              </p>
+              <br />
+              <v-btn
+                tile
+                dark
+                color="yellow"
+                class="mt-4"
+                href="/files/cv_mh.pdf"
+                download="Mikolaj Hilgert CV"
+              >
                 Download Resume
               </v-btn>
             </v-col>
           </v-row>
-          <br><br>
+          <br /><br />
         </div>
       </v-col>
     </v-container>
@@ -93,7 +119,7 @@ import NavBar from "../components/NavBar.vue";
 export default defineComponent({
   name: "HomeView",
   components: {
-    NavBar
+    NavBar,
   },
 });
 </script>
@@ -139,12 +165,12 @@ export default defineComponent({
   margin-left: 100px;
   margin-top: 50px;
   width: 356px;
-  height: 300px;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
 @media (min-width: 1800px) {
   .climb {
+    margin-top: 75px;
     transform: scale(1.5) translateX(+50%);
   }
 }
@@ -152,4 +178,5 @@ export default defineComponent({
   .climb {
     display: none;
   }
-}</style>
+}
+</style>
