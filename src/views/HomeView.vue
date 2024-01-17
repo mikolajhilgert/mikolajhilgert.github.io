@@ -69,16 +69,14 @@
               <div style="width: 120px">
                 <br />
               </div>
-              <h4 class="mt-n4">
-                Student & Software Engineer at BuildingBlocks (Part of CM.com)
-              </h4>
-              <br />
+              <!-- <h4 class="mt-n4">Student</h4>
+              <br /> -->
               <p class="text-grey">
                 My name is Mikolaj, and I’m a fourth-year bachelor's student in
                 ICT and Software Engineering.
               </p>
               <br />
-              <p class="text-grey">
+              <p class="text-grey" style="text-align: justify">
                 Coming from an international environment, I have met and worked
                 with people from many different cultures thanks to the projects
                 I did during my studies. I've learned how to become a good
@@ -90,6 +88,12 @@
                 creative solutions to difficult problems.
               </p>
               <br />
+              <p class="text-grey" style="text-align: justify">
+                I strongly believe in the power of pushing limits, whether by
+                conquering physical heights or exploring the forefront of
+                technological progress.
+              </p>
+              <br />
               <v-btn
                 tile
                 dark
@@ -98,7 +102,7 @@
                 href="/files/cv_mh.pdf"
                 download="Mikolaj Hilgert CV"
               >
-                Download Resume
+                Download my Resume
               </v-btn>
             </v-col>
           </v-row>
