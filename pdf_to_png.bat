@@ -1,0 +1,1 @@
+pdftoppm -png "public/files/Mikolaj Hilgert CV.pdf" > "public/files/Mikolaj Hilgert CV.png"
