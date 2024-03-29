@@ -94,15 +94,8 @@
                 technological progress.
               </p>
               <br />
-              <v-btn
-                tile
-                dark
-                color="yellow"
-                class="mt-4"
-                href="/files/Mikolaj Hilgert CV.pdf"
-                download="Mikolaj Hilgert CV"
-              >
-                Download my Resume
+              <v-btn tile dark color="yellow" class="mt-4" href="/view-cv">
+                See my Resume
               </v-btn>
             </v-col>
           </v-row>
