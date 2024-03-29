@@ -20,7 +20,6 @@ const routes = [
   {
     path: "/view-resume",
     name: "resume",
-    mode: "hash",
     component: ResumeView,
   },
 ];
