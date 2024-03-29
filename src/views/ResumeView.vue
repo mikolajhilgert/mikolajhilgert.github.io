@@ -1,12 +1,12 @@
 <template>
   <div class="pdf-viewer">
-    <button
+    <a
       class="download-button"
       href="/files/Mikolaj Hilgert CV.pdf"
       download="Mikolaj Hilgert CV"
     >
       Download as PDF
-    </button>
+    </a>
     <div class="pdf-container">
       <object
         :data="pdfUrl"
