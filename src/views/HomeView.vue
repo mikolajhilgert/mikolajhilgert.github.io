@@ -94,13 +94,7 @@
                 technological progress.
               </p>
               <br />
-              <v-btn
-                tile
-                dark
-                color="yellow"
-                class="mt-4"
-                href="/#/view-resume"
-              >
+              <v-btn tile dark color="yellow" class="mt-4" href="/view-resume">
                 See my Resume
               </v-btn>
             </v-col>

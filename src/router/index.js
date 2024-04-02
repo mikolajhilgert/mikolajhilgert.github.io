@@ -22,7 +22,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(), // Use hash mode
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
