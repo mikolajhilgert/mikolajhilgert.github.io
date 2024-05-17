@@ -1,24 +1,5 @@
-# portfolio
+# User Profile Card
 
-## Project setup
-```
-npm install
-```
+A Pen created on CodePen.io. Original URL: [https://codepen.io/mikolajhilgert/pen/BaejjNo](https://codepen.io/mikolajhilgert/pen/BaejjNo).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+User Profile Card

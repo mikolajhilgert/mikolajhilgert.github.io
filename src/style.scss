@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@mixin px($px) {
+  padding-left: $px;
+  padding-right: $px;
+}
+
+@mixin py($py) {
+  padding-top: $py;
+  padding-bottom: $py;
+}
+
+:root {
+  --secondary: #eef7fe;
+  --primary: #000;
+  --primary-light: #22215ba8;
+  --bg: #fff;
+  --font-body: Poppins, sans-serif;
+  --btn: #22215b;
+  --btn-text: black;
+  --icons: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    // --primary:white;
+    --bg: #191919;
+    --secondary: #151515;
+    --primary: #fff;
+    --btn: #222831;
+    --btn-text: white;
+    --primary-light: #fff;
+    --icons: white;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e7e9f0;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card {
+  padding: 50px 32px;
+  background: var(--bg);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+
+  .user {
+    &-avatar {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &-type {
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding: 5px 20px;
+      margin-top: 16px;
+      font-weight: 500;
+      border-radius: 6px;
+      background: var(--secondary);
+      color: var(--primary);
+    }
+
+    &-name {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    &-job__title {
+      color: var(--primary);
+      font-size: 15px;
+    }
+
+    &-bio {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+      color: var(--primary-light);
+    }
+
+    &-external__links {
+      width: 100%;
+      display: flex;
+      margin-top: 32px;
+      align-items: center;
+      justify-content: space-between;
+      @include px(10px);
+      li a svg path {
+        fill: var(--icons);
+      }
+    }
+
+    &-actions {
+      width: 100%;
+      margin-top: 32px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      .btn {
+        flex: 1;
+        font-size: 18px;
+        font-weight: 400;
+        @include py(15px);
+        @include px(25px);
+
+        &-rounded {
+          border-radius: 12px;
+        }
+
+        &-primary {
+          background: transparent;
+          color: var(--btn-text);
+          border: 2px solid var(--btn);
+          &:hover {
+            background: lighten(#22215b, 10);
+          }
+        }
+
+        &-secondary {
+          background: var(--btn);
+
+          color: var(--btn-text);
+          --btn-text: white;
+        }
+      }
+    }
+  }
+}
