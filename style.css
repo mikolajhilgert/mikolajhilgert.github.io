@@ -56,7 +56,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #e7e9f0;
+  background: linear-gradient(to right, #f0e7e7, #f2d8d6);
+  /* background-color: #e7e9f0; */
   padding: 20px;
 }
 
@@ -79,6 +80,7 @@ button {
   flex-direction: column;
   align-items: center;
   border-radius: 30px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
 }
 .card .user-avatar {
   height: 100px;
@@ -147,13 +149,17 @@ button {
 .card .user-actions .btn-primary {
   background: var(--btn);
   color: var(--btn-text);
+  border: 2px solid var(--btn);
   --btn-text: white;
 }
-.card .user-actions .btn-secondary:hover {
-  background: #302f80;
+.card .user-actions .btn-primary:hover {
+  background: #5b1d22;
 }
 .card .user-actions .btn-secondary {
   background: transparent;
   color: var(--btn-text);
   border: 2px solid var(--btn);
+}
+.card .user-actions .btn-secondary:hover {
+  background: #0a66c2;
 }
