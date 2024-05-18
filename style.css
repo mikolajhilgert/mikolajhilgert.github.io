@@ -56,8 +56,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #f0e7e7, #f0dcda);
-  /* background-color: #e7e9f0; */
+  /* background: linear-gradient(to right, #f0e7e7, #f0dcda); */
+  background-color: #e7e9f0;
   padding: 20px;
 }
 
