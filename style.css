@@ -163,3 +163,13 @@ button {
 .card .user-actions .btn-secondary:hover {
   background: #0a66c2;
 }
+
+@media (max-width: 600px) {
+  .card .user-actions {
+    flex-direction: column;
+  }
+  .card .user-actions .btn {
+    width: 100%;
+    margin-bottom: 1px;
+  }
+}
